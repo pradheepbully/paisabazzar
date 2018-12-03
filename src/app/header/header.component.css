@@ -1,0 +1,52 @@
+
+.container2{
+    background-color:#333;
+    padding: 20px 0px 0px 0px;
+
+}
+.title{
+    background-color:#333;
+    min-width: 85%;
+    float: left;
+   
+}
+
+.title h1{
+   color: whitesmoke;  
+    padding: 0px 30px;
+   margin: 7px;
+
+}
+.title h1:hover{
+    cursor: pointer;
+}
+.sign-in{
+background-color:aqua;
+padding-left: 1268px;
+padding-top: 19px;
+background-color:#333;
+padding-bottom: 15px;
+}
+.nav{
+    color: white;
+    background-color: rgb(99, 85, 85)
+}
+
+.nav ul{
+    list-style: none;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+.nav ul li{
+    display: inline;
+    padding: 10px 45px;
+    
+
+}
+
+.nav ul li:hover{
+    background-color:#333;
+    color: whitesmoke;
+    cursor: pointer;
+    
+}

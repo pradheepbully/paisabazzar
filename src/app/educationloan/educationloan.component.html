@@ -1,0 +1,71 @@
+<h1>
+  EducationLoan
+</h1>
+
+
+<div class="main">
+    <div class="amount"> <label for='amount'>Your desired loan amount</label>
+      <br><input type="number" id="amount" #amount>
+    </div>
+    <div class="time"><label for= 'time'>Enter duration</label>
+      <br><input type="number" id="time" #time>
+    </div>
+    <div claas="btn">
+      <button type="submit" (click)='calculate(amount.value,time.value)'>GetResult</button>
+    </div>
+    <div class="btn">
+      <button type="reset">Reset</button>
+    </div>
+  </div>
+   
+  <div class="container">
+
+      <table class="table">
+          <thead class="thead-dark">
+            <tr>
+            <th scope="col">Bank Name</th>
+            <th scope="col">Rate (%)</th>
+            <th  scope="col">Loan Amount</th>
+            <th scope="col">Payable amount</th>
+            <th scope="col">EMI</th>
+          </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">State Bank of India</td>
+              <td>{{changeSbiEducationRate()}}</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+                <td>Allahabad Bank</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+  
+              <tr>
+                  <td>Bank of Baroda</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+  
+                <tr>
+                    <td>Central Bank of India</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+        
+          
+          </tbody>
+        
+        </table>
+  
+      </div>
+  

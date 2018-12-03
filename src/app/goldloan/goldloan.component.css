@@ -1,0 +1,28 @@
+
+input[type=number]
+{
+    width: 20%;
+    padding: 15px 15px;
+    color:rgb(206, 66, 101);
+    background-color:rgb(228, 188, 203);
+    border-radius:15px; 
+}
+.main{
+    text-align: center;
+ 
+    font-size: 120%;
+}
+.table{
+    text-align: left;
+
+}
+.thead-dark{
+    color: #fff;
+    background-color: #212529;
+    border-color: #32383e;
+}
+.table td, .table th {
+    padding: 12px;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}

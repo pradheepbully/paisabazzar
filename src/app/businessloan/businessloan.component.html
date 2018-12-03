@@ -1,0 +1,122 @@
+<h1>
+  BusinessLoan
+</h1>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3">
+    <label for="amount">Your Desired Loan Amount</label>
+    <br><input type="number" id="amount" [(ngModel)]="amt" #amount>
+  </div>
+  <div class="col-sm-3">
+    <label for= 'time'>Enter duration</label>
+    <br><input type="number" id="time" [(ngModel)]="tm"  #time>
+  </div>
+  <div class="col-sm-1">
+    <br>
+  
+    <button  class="btn btn-success" type="submit" (click)='calculate(amount.value,time.value)'>GetResult</button>
+  </div>
+  <div class="col-sm-1">
+      <br>
+    <button  class="btn btn-primary" type="reset">Reset</button>
+  </div>
+</div>
+  </div>
+  <br>
+  <br>
+
+<div class="container">
+
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+          <th scope="col">Bank Name</th>
+          <th scope="col">Rate (%)</th>
+          <th  scope="col">Loan Amount</th>
+          <th scope="col">Payable amount</th>
+          <th scope="col">EMI</th>
+        </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td scope="row">State Bank of India</td>
+            <td>{{changeSbiBusinessRate()}}</td>
+            <td>{{amt}}</td>
+            <td>{{amt*changeSbiBusinessRate()}}</td>
+            <td></td>
+          </tr>
+          <tr>
+              <td>Allahabad Bank</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+                <td>Bank of Baroda</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+
+              <tr>
+                  <td>Central Bank of India</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+      
+        
+        </tbody>
+      
+      </table>
+
+    </div>
+
+
+      <!--       
+</div>
+  <table cellpadding="40" border="solid">
+    <tr style="background-color: crimson">
+      <th>BankName</th>
+      <th>Rate</th>
+      <th>loan Amount</th>
+      <th>payble Amount</th>
+      <th>EMI</th>
+    </tr>
+    <tr style="background-color: rgb(206, 86, 110)">
+      <td>State Bank Of India</td>
+      <td>10%</td>
+      <td>{{amount.value}}</td>
+      <td>{{totAmount1}}</td>
+      <td>{{emi1}}</td>
+    </tr>
+    <tr style="background-color: rgb(206, 86, 110)">
+      <td>Allahabad Bank</td>
+      <td>11%</td>
+      <td>{{amount.value}}</td>
+      <td>{{totAmount2}}</td>
+      <td>{{emi2}}</td>
+    </tr>
+    <tr style="background-color: rgb(206, 86, 110)">
+      <td>Bank of Baroda</td>
+      <td>12%</td>
+      <td>{{amount.value}}</td>
+      <td>{{totAmount3}}</td>
+      <td>{{emi3}}</td>
+    </tr>
+    <tr style="background-color: rgb(206, 86, 110)">
+      <td >Central Bank of India</td>
+      <td>13%</td>
+      <td>{{amount.value}}</td>
+      <td>{{totAmount4}}</td>
+      <td>{{emi4}}</td>
+    </tr>
+  </table> -->
+
+
+

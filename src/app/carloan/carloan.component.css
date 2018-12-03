@@ -1,0 +1,35 @@
+input[type=number]:focus{
+    background-color: #a6aaaf;
+
+}
+
+input[type=number]
+{
+    width: 200px;
+    padding: 5px 10px;
+  
+ 
+     
+}
+.row{
+    padding: 40px 0px;
+}
+.main{
+    text-align: center;
+ 
+    font-size: 120%;
+}
+.table{
+    text-align: left;
+
+}
+.thead-dark{
+    color: #fff;
+    background-color: #212529;
+    border-color: #32383e;
+}
+.table td, .table th {
+    padding: 12px;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}

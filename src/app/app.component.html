@@ -1,0 +1,32 @@
+<app-header></app-header>
+<div class='nav'>
+    <ul>
+        <li routerLink="businessloan">Business Loan</li>
+        <li routerLink="carloan">Car Loan</li>
+        <li routerLink="educationloan">Education Loan</li>
+        <li routerLink="goldloan">Gold Loan</li>
+        <li routerLink="homeloan">Home Loan</li>
+        <li routerLink="personalloan">Personal Loan</li>
+        <li routerLink="adminmoduleview">Admin</li>
+        <li routerLink="adminmodulesbi">SBI</li>
+
+    </ul>
+</div>
+<router-outlet></router-outlet>
+
+<button (click)="setCookies()">Set Cookies</button>
+<button (click)="getCookies()">Get Cookies</button>
+<button (click)="delCookies()">Delete Cookies</button>
+<br> <br>
+
+
+<button (click)="setLocalStorage()">Set Local Storage</button>
+<button (click)="getLocalStorage()">Get Local Storage</button>
+<button (click)="delLocalStorage()">Delete Local Storage</button>
+
+<br> <br>
+
+
+<button (click)="setSessionStorage()">Set Session Storage</button>
+<button (click)="getSessionStorage()">Get Session Storage</button>
+<button (click)="delSessionStorage()">Delete Session Storage</button>
